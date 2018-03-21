@@ -67,7 +67,7 @@ class ButtonLoader extends React.Component {
         height: 15,
         position: "absolute",
         left: 40,
-        top: 0,
+        top: 6,
       }}>
         {icon}
       </span>
