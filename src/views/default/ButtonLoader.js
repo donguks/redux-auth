@@ -17,7 +17,7 @@ class ButtonLoader extends React.Component {
   };
 
   static defaultProps = {
-    icon: "▸",
+    icon: "",
     loading: false,
     spinConfig: {
       lines: 10,
@@ -66,8 +66,8 @@ class ButtonLoader extends React.Component {
         width: 15,
         height: 15,
         position: "absolute",
-        left: 0,
-        top: 2
+        left: 40,
+        top: 0,
       }}>
         {icon}
       </span>
@@ -82,7 +82,7 @@ class ButtonLoader extends React.Component {
       <button
         disabled={this.props.disabled || this.props.loading}
         className={this.props.className}
-        style={style}
+        style={{position: relative}}
         type={this.props.type}
         onClick={this.handleClick.bind(this)}>
         {this.renderIcon()} {this.props.children}

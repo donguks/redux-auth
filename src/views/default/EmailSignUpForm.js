@@ -63,9 +63,6 @@ class EmailSignUpForm extends React.Component {
       <form className='redux-auth email-sign-up-form'
             style={{clear: "both", overflow: "hidden"}}
             onSubmit={this.handleSubmit.bind(this)}>
-            <div>
-              test code
-            </div>
         <Input type="email"
                label="Email"
                className="email-sign-up-email"

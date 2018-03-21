@@ -358,8 +358,8 @@ var ButtonLoader = function (_React$Component) {
             width: 15,
             height: 15,
             position: "absolute",
-            left: 0,
-            top: 2
+            left: 40,
+            top: 0
           } },
         icon
       );
@@ -375,7 +375,7 @@ var ButtonLoader = function (_React$Component) {
         {
           disabled: this.props.disabled || this.props.loading,
           className: this.props.className,
-          style: style,
+          style: { position: relative },
           type: this.props.type,
           onClick: this.handleClick.bind(this) },
         this.renderIcon(),
@@ -400,7 +400,7 @@ ButtonLoader.propTypes = {
   style: _propTypes2.default.object
 };
 ButtonLoader.defaultProps = {
-  icon: "▸",
+  icon: "",
   loading: false,
   spinConfig: {
     lines: 10,
@@ -2742,11 +2742,6 @@ var EmailSignUpForm = function (_React$Component) {
         { className: "redux-auth email-sign-up-form",
           style: { clear: "both", overflow: "hidden" },
           onSubmit: this.handleSubmit.bind(this) },
-        _react2.default.createElement(
-          "div",
-          null,
-          "test code"
-        ),
         _react2.default.createElement(_Input2.default, _extends({ type: "email",
           label: "Email",
           className: "email-sign-up-email",
