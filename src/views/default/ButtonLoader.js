@@ -82,7 +82,7 @@ class ButtonLoader extends React.Component {
       <button
         disabled={this.props.disabled || this.props.loading}
         className={this.props.className}
-        style={{position: relative}}
+        style={{position: "relative"}}
         type={this.props.type}
         onClick={this.handleClick.bind(this)}>
         {this.renderIcon()} {this.props.children}

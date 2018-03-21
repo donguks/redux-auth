@@ -375,7 +375,7 @@ var ButtonLoader = function (_React$Component) {
         {
           disabled: this.props.disabled || this.props.loading,
           className: this.props.className,
-          style: { position: relative },
+          style: { position: "relative" },
           type: this.props.type,
           onClick: this.handleClick.bind(this) },
         this.renderIcon(),
