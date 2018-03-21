@@ -51,7 +51,7 @@ export default createReducer(initialState, {
     return (user.uid)
       ? state.merge({
         attributes: user,
-        isSignedIn: true,
+        isSignedIn: false,
         endpointKey: endpoint
       })
       : state;
