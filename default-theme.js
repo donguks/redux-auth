@@ -378,6 +378,7 @@ var ButtonLoader = function (_React$Component) {
           style: style,
           type: this.props.type,
           onClick: this.handleClick.bind(this) },
+        this.renderIcon(),
         " ",
         this.props.children
       );

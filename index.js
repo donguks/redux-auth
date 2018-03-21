@@ -4491,7 +4491,7 @@ exports.default = (0, _reduxImmutablejs.createReducer)(initialState, (_createRed
   // this point.
   return user.uid ? state.merge({
     attributes: user,
-    isSignedIn: true,
+    isSignedIn: false,
     endpointKey: endpoint
   }) : state;
 }), _defineProperty(_createReducer, _updateAccount.UPDATE_ACCOUNT_COMPLETE, function (state, _ref7) {
