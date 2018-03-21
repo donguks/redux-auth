@@ -48,6 +48,7 @@ export default createReducer(initialState, {
   [EMAIL_SIGN_UP_COMPLETE]: (state, { endpoint, user }) => {
     // if registration does not require confirmation, user will be signed in at
     // this point.
+    console.log("hi")
     return (user.uid)
       ? state.merge({
         attributes: user,

@@ -4489,6 +4489,7 @@ exports.default = (0, _reduxImmutablejs.createReducer)(initialState, (_createRed
 
   // if registration does not require confirmation, user will be signed in at
   // this point.
+  console.log("hi");
   return user.uid ? state.merge({
     attributes: user,
     isSignedIn: false,

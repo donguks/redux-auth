@@ -2742,6 +2742,11 @@ var EmailSignUpForm = function (_React$Component) {
         { className: "redux-auth email-sign-up-form",
           style: { clear: "both", overflow: "hidden" },
           onSubmit: this.handleSubmit.bind(this) },
+        _react2.default.createElement(
+          "div",
+          null,
+          "test code"
+        ),
         _react2.default.createElement(_Input2.default, _extends({ type: "email",
           label: "Email",
           className: "email-sign-up-email",
